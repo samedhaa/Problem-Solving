@@ -1,2 +1,2 @@
 # Problem Solving
-### i list problems i solve programmatically from different online judges. 
+##### list of some of the problems i solve programmatically from different online judges. 
