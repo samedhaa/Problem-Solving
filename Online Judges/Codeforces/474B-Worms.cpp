@@ -24,15 +24,15 @@ int main()
         while(1)
         {
             int mid = (fst+lst)/2;
-            if(value >= v[mid].first and value <= v[mid].second or (v[mid].first == value or v[mid].second == value))
-            {
-                cout<<mid+1<<endl;
-                break;
-            }
             if(value < v[mid].first)
                 lst = mid;
             else if(value > v[mid].second)
                 fst = mid;
+            else
+            {
+                cout<<mid+1<<endl;
+                break;
+            }
         }
     }
     return 0;
