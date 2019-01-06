@@ -23,7 +23,7 @@ int main()
     cin>>n;
     for(int i=1;i<=n;i++)
         cin>>arr[i];
-    if(solve(0,0) >= 1e8)
+    if(solve(0,0) == 1e8)
         cout<<"YES";
     else
         cout<<"NO";
