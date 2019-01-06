@@ -9,9 +9,8 @@ int solve(int i, int holder)
 {
     if(i == n)
     {
-        if(holder== 0 or holder % 360 == 0){
+        if(holder== 0 or holder % 360 == 0)
             return 1e8;
-        }
         else
             return -1e8;
     }
