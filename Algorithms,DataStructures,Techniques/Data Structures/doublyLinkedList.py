@@ -89,21 +89,4 @@ class Node:
 			node = node.next
 
 		print("Error Inserting!")
-
-
-
-def main():
-	node1 = Node(1)
-	node2 = Node(2)
-	node3 = Node(3)
-	node4 = Node(4)
-
-
-	print(node1.ConnectedlinkedlistSize)
-	
-	node1.traverse()
-	node1.insertToEnd(node2)
-	node1.traverse()
-
-
-main()
+		
