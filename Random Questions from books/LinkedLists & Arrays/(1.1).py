@@ -21,7 +21,7 @@ def isUnique(array):
 # O(1) Space complexity
 def isUniqueFaster(array):
 	
-	array.sort()
+	array = sorted(array)
 
 	for i in range(len(array)-1):
 		if(array[i] == array[i+1]):
