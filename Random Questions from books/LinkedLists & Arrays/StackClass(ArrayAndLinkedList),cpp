@@ -1,0 +1,89 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+
+class LinkedListArray{
+
+    public:
+    void push(int n)
+    {
+        stack.push_back(n);
+    }
+        void pop()
+        {
+            if(!stack.empty())
+            {
+                stack.pop_back();
+            }
+        }
+
+        int peek()
+        {
+            if(!stack.empty())
+                return stack.back();
+            return -1;
+        }
+
+        bool isEmpty()
+        {
+            return stack.size() == 0;
+        }
+
+    private:
+        vector<int>stack;
+};
+class LinkedListStack{
+
+    struct Node{
+        int data;
+        Node *next;
+
+    };
+
+    public:
+        LinkedListStack()
+        {
+            top = NULL;
+            sz = 0;
+        }
+
+        void push(int n)
+        {
+            Node *node = new Node;
+            node->data = n;
+            node->next = top;
+            top = node;
+
+            sz++;
+        }
+        void pop()
+        {
+            if(top != NULL)
+            {
+                top = top->next;
+                sz--;
+            }
+        }
+
+        int peek()
+        {
+            if(top!=NULL)
+                return top->data;
+            return -1;
+        }
+
+        bool isEmpty()
+        {
+            return sz == 0;
+        }
+
+    private:
+        Node *top;
+        int sz;
+};
+
+int main() {
+
+    return 0;
+}
