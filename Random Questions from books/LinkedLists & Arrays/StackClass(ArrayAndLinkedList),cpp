@@ -3,7 +3,7 @@
 using namespace std;
 
 
-class LinkedListArray{
+class ArrayStack{
 
     public:
     void push(int n)
